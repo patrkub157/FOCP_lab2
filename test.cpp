@@ -4,14 +4,18 @@ using namespace std;
 
 int main()
 {
-    int my_number;
-    cin >> my_number;
-    if(my_number%2==0)
-        {
-            cout << "parzysta"  << endl;
-        }else{
-            cout << "nieparzysta" << endl;
-            }
+    float a,b,c,x;
+    cout << "please put a"  << endl;
+    cin >> a;
+    cout << "please put b"  << endl;
+    cin >> b;
+    cout << "please put c"  << endl;
+    cin >> c;
+
+    x= (c-b)/a;
+
+    cout << "The value of x is: "<< x << endl;
+
 
     return 0;
 }
