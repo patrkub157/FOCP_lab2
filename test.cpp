@@ -4,12 +4,15 @@ using namespace std;
 
 int main()
 {
-    float times;
+    int totalmoney;
     cout << "please put number of times"  << endl;
-    cin >> times;
-
-    for(int i=0;i <times;i++){
-         cout << "test"  << endl;
+    cin >> totalmoney;
+int banknotes = 0;
+    while(totalmoney >= 50){
+         totalmoney = totalmoney - 50;
+         banknotes = banknotes +1;
     }
+
+    cout << "number of banknotes: "<< banknotes  << endl;
     return 0;
 }
