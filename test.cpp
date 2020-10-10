@@ -6,6 +6,12 @@ int main()
 {
     int my_number;
     cin >> my_number;
-    cout << my_number << endl;
+    if(my_number%2==0)
+        {
+            cout << "parzysta"  << endl;
+        }else{
+            cout << "nieparzysta" << endl;
+            }
+
     return 0;
 }
