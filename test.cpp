@@ -4,18 +4,12 @@ using namespace std;
 
 int main()
 {
-    float a,b,c,x;
-    cout << "please put a"  << endl;
-    cin >> a;
-    cout << "please put b"  << endl;
-    cin >> b;
-    cout << "please put c"  << endl;
-    cin >> c;
+    float times;
+    cout << "please put number of times"  << endl;
+    cin >> times;
 
-    x= (c-b)/a;
-
-    cout << "The value of x is: "<< x << endl;
-
-
+    for(int i=0;i <times;i++){
+         cout << "test"  << endl;
+    }
     return 0;
 }
