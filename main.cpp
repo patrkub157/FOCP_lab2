@@ -2,41 +2,36 @@
 
 using namespace std;
 
-bool is_prime(int number)
+int pow(int base, int power)
 {
+    int result = 1;
 
-    for (int i = 2; i < number / 2; i++)
+    for (int i = 0; i < power; i++)
     {
-        if (number % i == 0)
-        {
-            return false;
-        }
+        result *= base;
     }
 
-    return true;
+    return result;
 }
 
 int read_int()
 {
-    cout << "Please introduce a number:" << endl;
+    cout << "Please type a number:" << endl;
 
-    int number;
-    cin >> number;
+    int n;
+    cin >> n;
 
-    return number;
+    return n;
 }
 
 int main()
 {
-    int a = read_int();
+    int base = read_int();
+    int power = read_int();
 
-    if (is_prime(a))
-    {
-        std::cout << "Your number is prime" << std::endl;
-    }
-    else
-    {
-        std::cout << "Your number is NOT prime" << std::endl;
-    }
+    int result = pow(base, power);
+
+    cout << "Result: " << result << endl;
+
     return 0;
 }
