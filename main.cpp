@@ -16,12 +16,19 @@ bool is_prime(int number)
     return true;
 }
 
+int read_int()
+{
+    cout << "Please introduce a number:" << endl;
+
+    int number;
+    cin >> number;
+
+    return number;
+}
+
 int main()
 {
-    cout << "Please put a number:" << endl;
-
-    int a;
-    cin >> a;
+    int a = read_int();
 
     if (is_prime(a))
     {
