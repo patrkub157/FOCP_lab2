@@ -4,7 +4,9 @@ using namespace std;
 
 int main()
 {
-    int totalmoney;
-    cout << "Hello world" << endl;
+    int a;
+    //<< endl
+    cout << "Please put in a number: ";
+    cin >> a;
     return 0;
 }
